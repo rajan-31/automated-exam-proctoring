@@ -7,7 +7,7 @@ import time
 # import os
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("../datasets/shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("./datasets/shape_predictor_68_face_landmarks.dat")
 
 # saved_data = np.load("saved_data.npy")
 # print(saved_data.shape)
@@ -39,15 +39,6 @@ while True:
         landmarks = predictor(gray, face).parts()
         for point in landmarks:
             cv2.circle(frame, (point.x, point.y), 2, (255, 0, 0), 2)
-
-        # nose = landmarks[27:36]
-        # lBro = landmarks[17:22]
-        # rBro = landmarks[42:48]
-        # lEye = landmarks[36:42]
-        # rEye = landmarks[42:48]
-        # mouthOut = landmarks[48:60]
-        # mouthIn = landmarks[60:68]
-        # border = landmarks[0:17]
 
         # points 1, 29, 17 in landmarks reference
         # ---------------------------1
