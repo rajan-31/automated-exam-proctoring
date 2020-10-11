@@ -1,6 +1,6 @@
 # Exam Servillence
 A ML model to keep watch on exam candidates through webcam and create and update observations.\
-*To under Working view* **[WORKING.md](./WORKING.md)**
+*To understand Working view* **[WORKING.md](./WORKING.md)**
 
 > If you want to try/ test this project download or clone the repository.
 
@@ -43,6 +43,7 @@ requests
 
 <br></br>
 **How to run**
+
 *you need to run two programs "app.py" & "exam_servillence.py"*
 
 to run app.py run foollowing command in commandline
