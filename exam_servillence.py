@@ -19,7 +19,7 @@ startt = time.time() / 60
 # tracking status
 moving, talking, okay = 0, 0, 0
 # initialize record
-url = 'http://127.0.0.1:5000/servillence'
+url = 'http://127.0.0.1:5000/surveillance'
 infoo = {"name": name, "moved": moving, "talked": talking}
 foo = requests.post(url, json=infoo)
 
