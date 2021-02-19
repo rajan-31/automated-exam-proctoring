@@ -1,4 +1,4 @@
-# Exam Servillence
+# Exam Surveillance
 A ML model to keep watch on exam candidates through webcam and create and update observations.\
 *To understand Working view* **[WORKING.md](./WORKING.md)**
 
@@ -17,8 +17,8 @@ A ML model to keep watch on exam candidates through webcam and create and update
 **Database installation**
 
 First install mongoDB\
-Create a database 'exam_servillence'\
-In 'exam_servillence' create collection 'statss'
+Create a database 'exam_surveillance'\
+In 'exam_surveillance' create collection 'statss'
 
 <br></br>
 \* Installations below are to run ML model\
@@ -44,17 +44,17 @@ requests
 <br></br>
 **How to run**
 
-*you need to run two programs "app.py" & "exam_servillence.py"*
+*you need to run two programs "app.py" & "exam_surveillance.py"*
 
 to run app.py run foollowing command in commandline
 
-`cd exam_servillence`\
+`cd exam_surveillance`\
 `flask run`
 
 > Run **exam_servilllence.py** in PyCharm
 
 you will get a window of your webcam
 
-**Now go to** http://127.0.0.1:5000/servillence to view observations
+**Now go to** http://127.0.0.1:5000/surveillance to view observations
 
 *Page will automatiaclly refresh after every 30 seconds & records will be updated every 30 seconds.*

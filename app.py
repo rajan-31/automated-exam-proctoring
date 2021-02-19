@@ -6,7 +6,7 @@ import json
 
 app = Flask(__name__)
 client = MongoClient('mongodb://localhost:27017/')
-db = client.exam_servillence
+db = client.exam_surveillance
 try:
     x = dumps(db.statss.find_one())
     print("\n * Database connection successfull\n")
@@ -18,8 +18,8 @@ def index():
     return "<h1>INDEX PAGE</h1>"
 
 
-@app.route('/servillence', methods=['GET', 'POST', 'PUT'])
-def servillence():
+@app.route('/surveillance', methods=['GET', 'POST', 'PUT'])
+def surveillance():
     if request.method == 'GET':
         dataa = dumps(db.statss.find())
         dataa = json.loads(dataa)
